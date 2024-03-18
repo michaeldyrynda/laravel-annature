@@ -1,0 +1,31 @@
+{
+    "name": "dyrynda/laravel-annature",
+    "description": "A Laravel wrapper for the annature-php SDK.",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Dyrynda\\Annature\\Laravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michael Dyrynda",
+            "email": "michael@dyrynda.com.au"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "dyrynda/annature": "dev-main",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dyrynda\\Annature\\Laravel\\AnnatureServiceProvider"
+            ]
+        }
+    }
+}
